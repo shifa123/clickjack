@@ -1,0 +1,14 @@
+
+<html>
+	<head>
+		<title>Clickjacking Test Page</title>
+	</head>
+
+	<body>
+		<h1>Clickjacking Test Results</h1>
+		<h2>Target: <a href="http://only.in">http://only.in</a></h2>
+		<h3>If you see the target website rendered below, it is <font color="red">VULNERABLE</font>.</h3>
+		<iframe width="900" height="600" src="http://only.in"></iframe>
+		<iframe style="position: absolute; left: 20px; top: 250px; opacity: 0.8; background: AliceBlue; font-weight: bold;" src="cj-attacker.html"></iframe>
+	</body>
+</html>
